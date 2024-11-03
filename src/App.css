@@ -28,6 +28,22 @@
   color: #61dafb;
 }
 
+.centred {
+  display: flex;
+  flex-direction: column; /* Or 'row' if you want items side by side */
+  align-items: center;
+  justify-content: center;/* Ensures the container takes up the full viewport height */
+}
+
+.controlPanel {
+  display: flex;
+  gap: 6vw; /* Adds space between elements in the control panel */
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +51,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px; /* Optional: add some padding for spacing */
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.itemButtons {
+  display: flex;
+  gap: 8px; /* Adds space between the buttons */
+  margin-left: auto;
+}
+.detailHeader{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin:10px auto;
+}
+
+.detailCard{
+  border-radius: 16px;
+  max-width: 80%;
+  margin:10px auto;
+  height: 70vh;
+  background-color: #FFE6E6;
 }
